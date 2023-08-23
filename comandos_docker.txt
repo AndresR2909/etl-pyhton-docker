@@ -1,0 +1,12 @@
+//local
+docker build  -t ejercicio-python-etl:latest -f devops/dockerfile .
+
+// en nube
+
+echo  'key' | docker login acrformaciondev.azurecr.io --username acrformaciondev --password-stdin
+
+docker build  -t acrformaciondev.azurecr.io/ejercicio-python-etl-afra:latest -f devops/dockerfile .
+
+docker push acrformaciondev.azurecr.io/ejercicio-python-etl-afra
+
+

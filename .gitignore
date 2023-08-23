@@ -1,0 +1,6 @@
+\code\config\dev.cfg
+.venv
+\data\input
+\data\ouput
+.comandos_docker.txt
+*.pyc
